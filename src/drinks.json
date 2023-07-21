@@ -1,0 +1,98 @@
+[
+	{
+		"drink_id" : 1,
+		"size" : "can",
+		"name" : "Coke",
+		"price" : 1,
+		"inventory" : 27,
+		"image" : "coke"
+	},
+	{
+		"drink_id" : 2,
+		"size" : "can",
+		"name" : "Diet Coke",
+		"price" : 1,
+		"inventory" : 33,
+		"image" : "dietcoke"
+	},
+	{
+		"drink_id" : 3,
+		"size" : "can",
+		"name" : "Coke Zero",
+		"price" : 1,
+		"inventory" : 16,
+		"image" : "cokezero"
+	},
+	{
+		"drink_id" : 4,
+		"size" : "can",
+		"name" : "Rootbeer",
+		"price" : 1,
+		"inventory" : 28,
+		"image" : "rootbeer"
+	},
+	{
+		"drink_id" : 5,
+		"size" : "can",
+		"name" : "Sprite",
+		"price" : 1,
+		"inventory" : 35,
+		"image" : "sprite"
+	},
+	{
+		"drink_id" : 6,
+		"size" : "can",
+		"name" : "Ginger Ale",
+		"price" : 1,
+		"inventory" : 9,
+		"image" : "gingerale"
+	},
+	{
+		"drink_id" : 7,
+		"size" : "can",
+		"name" : "Nestea",
+		"price" : 1,
+		"inventory" : 9,
+		"image" : "nestea"
+	},
+	{
+		"drink_id" : 8,
+		"size" : "355ml",
+		"name" : "Dasani Water",
+		"price" : 1,
+		"inventory" : 36,
+		"image" : "water"
+	},
+	{
+		"drink_id" : 9,
+		"size" : "2 litre",
+		"name" : "Coke",
+		"price" : 3,
+		"inventory" : 8,
+		"image" : "coke2l"
+	},
+	{
+		"drink_id" : 10,
+		"size" : "2 litre",
+		"name" : "Diet Coke",
+		"price" : 3,
+		"inventory" : 5,
+		"image" : "dietcoke2l"
+	},
+	{
+		"drink_id" : 11,
+		"size" : "2 litre",
+		"name" : "Sprite",
+		"price" : 3,
+		"inventory" : 5,
+		"image" : "sprite2l"
+	},
+	{
+		"drink_id" : 12,
+		"size" : "2 litre",
+		"name" : "Nestea",
+		"price" : 3,
+		"inventory" : 13,
+		"image" : "nestea2l"
+	}
+]

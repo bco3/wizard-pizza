@@ -1,0 +1,404 @@
+.order {
+    z-index: 10;
+    padding: 1rem;
+    font-size: 2rem;
+    position: relative;
+    max-width: 40rem;
+    min-width: 19rem;
+    height: fit-content;
+    overflow: visible;
+    background-color: #ffffff;
+}
+
+.orderContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#bannerOrder {
+    margin: 0;
+    position: relative;
+    z-index: 200;
+    /* left: 1.5%; */
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    background-color: #ea00ff;
+    padding: 0.5rem 0 0.2rem;
+    width: 100%;
+}
+
+.orderItem {
+    position: relative;
+    display: flex;
+    border-radius: 0.3rem;
+    max-width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    /* background-color:#ea00ff; */
+    background-image: linear-gradient(to right, #ea00ff, #ee31ff, #f36eff, #ffffff, #ffffff, #f374ff);
+    margin: 0.5rem 0;
+    z-index: 30;
+}
+
+.orderTitle {
+    position: absolute;
+    cursor: pointer;
+    text-transform: uppercase;
+    left: 0.4rem;
+    top: -0.5rem;
+    font-weight: 900;
+    text-shadow: 0.3rem 0.4rem 0.2rem rgba(0, 0, 0, 0.315);
+    margin: 0;
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.tally {
+    position: relative;
+    padding-left: 0.3rem;
+    display: inline-block;
+    width: 52%;
+}
+
+.tallyPrice {
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    width: 42%;
+}
+
+.sub-total {
+    position: relative;
+    padding: 0.6rem 0 0 0.3rem;
+    display: inline-block;
+    font-weight: 300;
+    width: 65%;
+}
+
+.discount {
+    position: relative;
+    padding: 0 0 0 0.3rem;
+    display: inline-block;
+    font-weight: 300;
+    width: 55%;
+}
+
+.tax {
+    position: relative;
+    padding: 0 0 0 0.3rem;
+    display: inline-block;
+    font-weight: 300;
+    width: 54%;
+}
+
+.total {
+    position: relative;
+    padding: 0.7rem 0 0 0.3rem;
+    display: inline-block;
+    font-weight: 500;
+    width: 65%;
+}
+
+.imageDimmer {
+    position: absolute;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.orderPicture {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* transition: transform 0.3s ease; */
+}
+
+.orderPictureDrink {
+    position: absolute;
+    object-fit: cover;
+    width: 10%;
+    height: 100%;
+    overflow: visible;
+    left: 65%;
+    /* padding-bottom: 90%; */
+    /* transform: rotate(45deg); */
+    /* transition: transform 0.3s ease; */
+}
+
+.orderItem:hover>.imageDimmer {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* .orderItem:hover > .orderPicture{
+    transform: scale(1.1);
+} */
+
+.orderSize {
+    z-index: 50;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ea00ff;
+    transition: color 0.3s ease;
+}
+
+.orderItem:hover .orderSize {
+    color: #f268fe;
+}
+
+.orderItem:hover .orderToppingAmount {
+    color: #f582ff;
+}
+
+.editOrder {
+    z-index: 50;
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: 0 0.5rem;
+    padding: 1.7rem 0.45rem 0.1rem;
+    margin: 0;
+    opacity: 100%;
+    font-weight: 900;
+    color: #ffffff;
+    width: 100%;
+    height: fit-content;
+    text-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.315);
+    font-size: 2rem;
+    transition: opacity 0.5s;
+}
+
+.toppingsClick {
+    z-index: 50;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem 0 0 0;
+    margin: 0;
+    bottom: 0.3rem;
+    align-self: end;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.315);
+    font-size: 2rem;
+}
+
+.toppingsClick:hover {
+    color: #ea00ff;
+}
+
+.orderTopping {
+    z-index: 50;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.35);
+    font-size: 1.5rem;
+}
+
+.orderToppingAmount {
+    z-index: 50;
+    display: inline;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: #ea00ff;
+    text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.35);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.topping {
+    z-index: 50;
+    padding: 0 0.5rem;
+    margin: 0;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0.15rem 0.2rem 0.15rem rgba(0, 0, 0, 0.315);
+    font-size: 1rem;
+}
+
+.orderItemPrice {
+    z-index: 50;
+    display: flex;
+    position: absolute;
+    right: 2.1rem;
+    top: -0.4rem;
+    align-self: center;
+    justify-self: center;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0.15rem 0.2rem 0.15rem rgba(0, 0, 0, 0.315);
+    font-size: 2rem;
+}
+
+.editOrderContainer {
+    display: flex;
+    position: absolute;
+    background-color: #a200ff;
+    color: white;
+    content: "\2716";
+    font-size: 1.3rem;
+    text-align: center;
+    z-index: 60;
+    width: 1.8rem;
+    height: 1.8rem;
+    right: 0rem;
+    top: -0.05rem;
+    border-radius: 0 0 0 0.5rem;
+}
+
+.editOrderContainer:before {
+    text-align: center;
+    margin: auto;
+    content: "\2715";
+}
+
+.editOrderButton {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 900;
+    right: 0;
+    top: 0;
+}
+
+.editOrderContainer:hover {
+    background-color: #ea00ff;
+}
+
+.customerInputs {
+    width: 90%;
+    margin: 0.3rem;
+    /* font-family: 'Sunshiney', cursive; */
+    font-size: 1rem;
+    color: #a200ff;
+}
+
+#scheduledTime {
+    width: 8rem;
+    margin: 0.3rem;
+    /* font-family: 'Sunshiney', cursive; */
+    font-size: 1rem;
+    color: #a200ff;
+}
+
+#scheduleText {
+    margin: 0 0.3rem;
+    font-size: 1.2rem;
+}
+
+#pickupTime {
+    vertical-align: middle;
+}
+
+#submitOrder {
+    margin: 0.3rem;
+    font-family: 'Big Shoulders Display', arial;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background-color: white;
+    color: #ea00ff;
+}
+
+.progress {
+    display: flex;
+    position: relative;
+    padding: 0.3rem;
+    justify-content: space-between;
+    /* width: 52%; */
+    width: 100% - 1rem;
+    height: 1rem;
+}
+
+.progressBar {
+    /* box-sizing: border-box; */
+    margin: 0.3rem;
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    width: 100% - 0.6rem;
+    height: 0.9rem;
+}
+
+.progressInner {
+    /* position: absolute; */
+    background-color: #00eeff;
+    border-radius: 0 0.2rem 0.25rem 0;
+    /* border-color: #0278ff; */
+    width: 0%;
+    height: 100%;
+}
+
+.progressTime {
+    position: relative;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media all and (orientation:portrait) {
+
+    .orderContainer {
+        display: grid;
+    }
+
+    .yourOrder {
+        position: relative;
+        background-color: #a200ff;
+        border-radius: 0.3rem;
+        min-width: 16rem;
+        height: auto;
+        z-index: 30;
+        padding: 0.2rem 0.3rem 0.5rem 0.5rem;
+        font-weight: 500;
+        text-shadow: 0.3rem 0.4rem 0.2rem rgba(0, 0, 0, 0.315);
+        margin: 0 1rem 1rem;
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        max-width: 40rem;
+        min-width: 19rem;
+        height: fit-content;
+    }
+
+}
+
+@media all and (orientation:landscape) {
+
+    .yourOrder {
+        position: relative;
+        background-color: #a200ff;
+        border-radius: 0.5rem 1.5rem 0.5rem 0.5rem;
+        width: 16rem;
+        min-width: 13rem;
+        height: auto;
+        z-index: 30;
+        padding: 0.2rem 0.3rem 0.5rem 0.5rem;
+        font-weight: 500;
+        text-shadow: 0.3rem 0.4rem 0.2rem rgba(0, 0, 0, 0.315);
+        margin: 1.5rem 1.4rem 1.4rem 0;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+    }
+
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {useState, useEffect} from 'react';
+import {Home} from './Home';
+import {Menu} from './Menu';
+import {Custom} from './Custom';
+import {Deals} from './Deals';
+import {Order} from './Order';
+import { WizardHeader } from './WizardHeader';
+import { MenuProvider } from './Contexts/MenuContext';
+import { OrderProvider } from './Contexts/OrderContext';
+import { useOrder } from './Contexts/OrderContext';
+// import { useMenu } from './Contexts/MenuContext';
+// import { CustomProvider } from './Contexts/CustomContext';
+import './header.css';
+// import './menu.css';
+// import Select from 'react-select'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+export const App = () => {
+
+
+return (
+    <>
+    {/* <Cursor />
+     <main className="container mx-auto px-2 md:px-0"> */}
+<MenuProvider>
+ <WizardHeader/></MenuProvider>
+ {/* </main> */}
+ </>
+)
+};

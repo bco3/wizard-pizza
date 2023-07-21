@@ -1,0 +1,203 @@
+.desserts {
+    z-index: 10;
+    padding: 2rem;
+    margin: auto;
+    font-size: 2rem;
+    display: grid;
+    gap: 2rem 2rem;
+    grid-auto-rows: minmax(17rem, 19rem);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 17rem));
+    justify-content: center;
+    position: relative;
+    width: 93%;
+    max-width: 1080px;
+    min-height: calc(100vh - 9rem);
+    overflow: hidden;
+    background-color: #ffffff;
+    /* background-color: #ea60ff; */
+}
+
+.header {
+    margin: 0;
+    position: relative;
+    z-index: 200;
+    /* left: 1.5%; */
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: white;
+    background-color: #a200ff;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+#bannerDesserts {
+    margin: 0;
+    position: relative;
+    z-index: 200;
+    /* left: 1.5%; */
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    background-color: #ea00ff;
+    padding: 0.5rem 0 0.2rem;
+    width: 100%;
+}
+
+.dessert {
+    position: relative;
+    /* direction: rtl; */
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    color: #a200ff;
+    /* align-content: center; */
+    display: flex;
+    max-width: 100%;
+    /* overflow: hidden; */
+    margin: 0;
+    z-index: 30;
+    /* scroll-snap-align: start; */
+
+}
+
+.dessertTitle {
+    /* display: hidden; */
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+    left: 0.4rem;
+    top: -0.5rem;
+    font-weight: 900;
+    text-shadow: 0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    /* color: #a200ff; */
+    /* transition: color 0.3s ease; */
+}
+
+.dessertSize {
+    /* display: hidden; */
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+    left: 0.4rem;
+    bottom: 0.1rem;
+    font-weight: 500;
+    text-shadow: 0.15rem 0.25rem 0.1rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    /* color: #a200ff; */
+    /* transition: color 0.3s ease; */
+}
+
+.dessertPicture {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.dessert:hover>.dessertPicture {
+    transform: scale(1.1);
+}
+
+.dessertDescription {
+    color: white;
+    display: flex;
+    /* position: relative; */
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 2.3rem;
+    height: 2.3rem;
+    /* text-shadow: 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.415); */
+    /* background-color: rgba(0, 0, 0, 0.288); */
+    background-color: #a200ff4d;
+    /* color: #a200ff; */
+    border-radius: 50%;
+    margin: auto;
+    padding: 0.5rem;
+    /* justify-items: center; */
+    /* justify-self: center; */
+    justify-content: center;
+    /* text-align: center; */
+    bottom: 0rem;
+    right: 0rem;
+    align-self: right;
+
+}
+
+.noDesserts {
+    color: white;
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    /* text-shadow: 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.415); */
+    background-color: #a200ff;
+    border-radius: 0.5rem;
+    margin: auto;
+    padding: 0.5rem;
+    /* justify-items: center; */
+    align-self: center;
+}
+
+.cartOrderClickDessert {
+    z-index: 65;
+    position: absolute;
+    background-image: url('/public/img/cartWhiteMotion.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0%;
+    background-size: 3rem;
+    filter: drop-shadow(0.25rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+    bottom: -0.2rem;
+    left: -2rem;
+    /* padding-left: 0.5rem; */
+    height: 3rem;
+    width: 2.6rem;
+}
+
+@keyframes cartRollClickdessert {
+    0% {
+        left: -2rem;
+        transform: rotate(0deg);
+        opacity: 0%;
+        animation-timing-function: linear;
+    }
+
+    30% {
+        left: 2rem;
+        transform: rotate(-7deg);
+        opacity: 100%;
+        animation-timing-function: linear;
+    }
+
+    70% {
+        left: 6rem;
+        transform: rotate(7deg);
+        opacity: 100%;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        left: 9rem;
+        transform: rotate(0deg);
+        opacity: 30%;
+        animation-timing-function: linear;
+    }
+}
+
+@media only screen and (max-height : 400px) {
+    #bannerDesserts {
+        padding-top: 3rem;
+    }
+}

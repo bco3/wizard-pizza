@@ -1,0 +1,509 @@
+.container {
+    position: relative;
+}
+
+.menu {
+    z-index: 10;
+    padding: 2rem;
+    margin: 0;
+    font-size: 2rem;
+    display: grid;
+    gap: 2rem 2rem;
+    grid-auto-rows: minmax(23rem, auto);
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    position: relative;
+    /* width: 100vw; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    /* width: 100%; */
+    background-color: #ffffff;
+    /* scroll-snap-type: y proximity; */
+    /* scroll-padding: 4.5rem; */
+}
+
+.menuHeader {
+    margin: 0 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: white;
+    background-color: #a200ff;
+    padding: 0.5rem;
+}
+
+.menuWrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#bannerMenu {
+    margin: 0;
+    position: relative;
+    z-index: 200;
+    /* left: 1.5%; */
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    background-color: #ea00ff;
+    padding: 0.5rem 0 0.2rem;
+    /* width: 100%; */
+}
+
+.bgBlur {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    justify-content: space-between;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: 30;
+    transition: 0.3s;
+}
+
+.prebuiltPizza {
+    position: relative;
+    /* direction: rtl; */
+    justify-content: space-between;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: 30;
+    /* scroll-snap-align: start; */
+}
+
+.prebuiltPizzaTitle {
+    position: absolute;
+    cursor: pointer;
+    padding: 0 0.4rem;
+    /* left: 0rem; */
+    right: 10px;
+    top: -1.2rem;
+    font-weight: 900;
+    /* text-shadow: 0.3rem 0.4rem 0.2rem rgba(0, 0, 0, 0.315); */
+    margin: 0;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in;
+}
+
+.prebuiltPizzaTitle2 {
+    position: absolute;
+    cursor: pointer;
+    padding: 0 0.4rem;
+    /* left: 0rem; */
+    right: 10px;
+    top: -1.2rem;
+    font-weight: 900;
+    /* text-shadow: 0.3rem 0.4rem 0.2rem rgba(0, 0, 0, 0.315); */
+    margin: 0;
+    font-size: 6.07rem;
+    color: #ea00ff;
+    transition: 0.4s ease-in;
+}
+
+.prebuiltPizzaTitle3 {
+    position: absolute;
+    cursor: pointer;
+    padding: 0 0.4rem;
+    right: 10px;
+    /* left: 0.4rem; */
+    top: -1.2rem;
+    font-weight: 900;
+    /* text-shadow: 0.3rem 0.4rem 0.2rem rgba(0, 0, 0, 0.315); */
+    margin: 0;
+    font-size: 6.15rem;
+    color: #00eeff;
+    transition: 0.5s ease-in;
+}
+
+/* .prebuiltPizza:hover > .prebuiltPizzaTitle {
+    color:#ea00ff;
+} */
+
+.pizzaPicture {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.bgBlur:hover>.pizzaPicture {
+    transform: scale(1.1);
+}
+
+.bgBlur:hover>.prebuiltPizzaTitle2 {
+    font-size: 6.15rem;
+}
+
+.bgBlur:hover>.prebuiltPizzaTitle3 {
+    font-size: 6.25rem;
+}
+
+.pizzaSize {
+    z-index: 500;
+    /* display: flex; */
+    /* position: absolute; */
+    position: relative;
+    /* flex-direction: row; */
+    /* text-align: center; */
+    padding: 0;
+    font-size: 32px;
+    align-self: end;
+    /* width: 230px; */
+    /* justify-self: end; */
+    /* justify-content: end; */
+    /* justify-items:end; */
+    left: 7px;
+    bottom: 2px;
+    /* height: 2rem; */
+    font-weight: 900;
+    /* border-style: none; */
+    /* border-radius: 1rem; */
+    /* background-color: #cf86ff; */
+    color: rgb(255, 255, 255);
+}
+
+.editPizza {
+    /* z-index: 50; */
+    /* display: none; */
+    position: absolute;
+    direction: rtl;
+    /* padding: 0rem 0.5rem 0.5rem; */
+    padding: 0 0.5rem;
+    margin: 0;
+    top: 5px;
+    opacity: 0%;
+    /* margin: 0.8rem; */
+    /* left: 13rem; */
+    /* bottom: 0.3rem; */
+    /* align-self: end; */
+    font-weight: 900;
+    color: #ffffff;
+    /* vertical-align: bottom; */
+    scrollbar-color: #00eeff #ffffff;
+    scrollbar-width: auto;
+    overflow-y: auto;
+    width: 28rem;
+    /* max-width: 100%; */
+    /* max-height: 15.5rem; */
+    height: 19.5rem;
+    /* min-height: 14.5rem; */
+    /* border-radius: 0.7rem; */
+    /* clip-path: inset(5rem 0rem); */
+    /* background-color: #000000; */
+    text-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.315);
+    font-size: 26px;
+    transition: opacity 0.5s 0.5s;
+}
+
+.toppingsClick {
+    z-index: 50;
+    cursor: pointer;
+    /* display: none; */
+    position: relative;
+    /* padding: 0rem 0.5rem 0.5rem; */
+    padding: 0.5rem 0 0 0;
+    margin: 0;
+    /* margin: 0.8rem; */
+    /* left: 13rem; */
+    bottom: 0.3rem;
+    align-self: end;
+    font-weight: 900;
+    color: #ffffff;
+    /* vertical-align: bottom; */
+    /* border-radius: 0.7rem; */
+    /* clip-path: inset(5rem 0rem); */
+    text-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.315);
+    font-size: 2rem;
+}
+
+.toppingsClick:hover {
+    color: #ea00ff;
+}
+
+.toppingName {
+    z-index: 50;
+    /* cursor: pointer; */
+    /* display: flex; */
+    position: relative;
+    direction: ltr;
+    /* padding: 0rem 0.5rem 0.5rem; */
+    padding: 0;
+    margin: 0;
+    height: 36px;
+    /* margin: 0.8rem; */
+    /* left: 13rem; */
+    /* bottom: 0.3rem; */
+    align-self: end;
+    font-weight: 900;
+    color: #ffffff;
+    /* vertical-align: bottom; */
+    /* border-radius: 0.7rem; */
+    /* clip-path: inset(5rem 0rem); */
+    text-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.315);
+    font-size: 26px;
+}
+
+.topping {
+    z-index: 50;
+    /* cursor: pointer; */
+    /* display: flex; */
+    /* position: relative; */
+    /* padding: 0rem 0.5rem 0.5rem; */
+    padding: 0 0.5rem;
+    margin: 0;
+    /* margin: 0.8rem; */
+    /* left: 13rem; */
+    /* bottom: 0.3rem; */
+    /* align-self: end; */
+    font-weight: 400;
+    color: #ffffff;
+    /* vertical-align: bottom; */
+    /* border-radius: 0.7rem; */
+    /* clip-path: inset(5rem 0rem); */
+    text-shadow: 0.15rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+.addTopping {
+    direction: ltr;
+    display: flex;
+    position: relative;
+    font-size: 26px;
+    text-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.price {
+    z-index: 50;
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    font-weight: 900;
+    transform: rotate(3deg) translate(-0rem, 0rem);
+    color: white;
+    text-shadow: 0.15rem 0.2rem 0.15rem rgba(0, 0, 0, 0.315);
+    font-size: 2.9rem;
+    /* transition: font-size 0.3s 0.1s ease; */
+}
+
+.starPrice {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    background-image: url('/public/img/starPricePink.png');
+    background-repeat: no-repeat;
+    background-size: 8rem;
+    /* opacity: 0.7; */
+    filter: drop-shadow(0.25rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3));
+    /* background-color: black; */
+    z-index: 49;
+    width: 8rem;
+    height: 8rem;
+    right: -1rem;
+    bottom: -1.3rem;
+    /* transform: rotate(var(--rotateStar,-20deg)); */
+    justify-content: center;
+    transition: all 0.3s 0.1s ease;
+}
+
+
+.starFraming {
+    /* display: flex; */
+    position: absolute;
+    background-image: url('/public/img/starPrice.png');
+    background-repeat: no-repeat;
+    background-size: 2.3rem;
+    /* background-color: black; */
+    z-index: 49;
+    width: 2.3rem;
+    height: 2.3rem;
+    right: -0.3rem;
+    bottom: 6.8rem;
+    /* transform: rotate(var(--rotateStar,-20deg)); */
+    /* justify-content: center; */
+}
+
+.starFraming2 {
+    /* display: flex; */
+    position: absolute;
+    background-image: url('/public/img/starPrice.png');
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    /* background-color: black; */
+    z-index: 49;
+    width: 3rem;
+    height: 3rem;
+    right: 6.3rem;
+    bottom: -0.4rem;
+    /* transform: rotate(var(--rotateStar,-20deg)); */
+    /* justify-content: center; */
+}
+
+.addToOrderBackground {
+    display: grid;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.466);
+    background-color: #a200ff;
+    /* background-color:#a200ff63; */
+    z-index: 40;
+    width: 7.3rem;
+    height: 2.5rem;
+    right: 0rem;
+    bottom: 0rem;
+    border-radius: 1rem 0 0 0;
+}
+
+.addToOrderContainer {
+    display: grid;
+    cursor: pointer;
+    position: absolute;
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color:#a200ff; */
+    z-index: 60;
+    /* width: 7.3rem; */
+    width: 100px;
+    /* height: 2.5rem; */
+    height: 38px;
+    right: 0rem;
+    bottom: -3rem;
+    border-radius: 1rem 0 0 0;
+    overflow: hidden;
+    transition: bottom 0.4s ease;
+}
+
+.addToOrder {
+    /* z-index: 60; */
+    display: flex;
+    position: relative;
+    /* color:#a200ff; */
+    color: #ffffff;
+    /* color:#ea00ff; */
+    /* font-size: 2rem; */
+    font-size: 32px;
+    text-shadow: 0.15rem 0.2rem 0.15rem rgba(0, 0, 0, 0.315);
+    font-weight: 900;
+    /* text-align: center; */
+    justify-self: center;
+    align-self: center;
+}
+
+.cartOrderClick {
+    z-index: 65;
+    position: absolute;
+    background-image: url('/public/img/cartWhiteMotion.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    filter: drop-shadow(0.25rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+    bottom: -0.2rem;
+    left: -3rem;
+    /* padding-left: 0.5rem; */
+    height: 3rem;
+    width: 2.6rem;
+}
+
+@keyframes cartRollClick {
+    0% {
+        left: -3rem;
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+
+    30% {
+        left: 2rem;
+        transform: rotate(-7deg);
+        animation-timing-function: linear;
+    }
+
+    70% {
+        left: 7rem;
+        transform: rotate(7deg);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        left: 10rem;
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+}
+
+.addToOrderContainer:hover .orderPlus {
+    /* color:#ea00ff; */
+    color: #00eeff;
+}
+
+@media only screen and (max-width : 804px) and (min-width : 640px) {
+
+    .prebuiltPizzaTitle {
+        right: auto;
+    }
+
+    .prebuiltPizzaTitle2 {
+        right: auto;
+    }
+
+    .prebuiltPizzaTitle3 {
+        right: auto;
+    }
+}
+
+@media only screen and (max-height : 400px) {
+    .menu {
+        grid-auto-rows: minmax(18rem, auto);
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+
+    .editPizza {
+        height: 14.5rem;
+    }
+
+    #bannerMenu {
+        margin-top: 2.7rem;
+    }
+}
+
+@media only screen and (max-height : 400px) and (min-width : 640px) and (max-width : 804px) {
+    .menu {
+        grid-auto-rows: minmax(18rem, auto);
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+
+    .editPizza {
+        height: 14.5rem;
+    }
+
+    .prebuiltPizzaTitle {
+        right: auto;
+    }
+
+    .prebuiltPizzaTitle2 {
+        right: auto;
+    }
+
+    .prebuiltPizzaTitle3 {
+        right: auto;
+    }
+}
+
+@media only screen and (max-width : 419px) {
+    .menu {
+        padding: 2rem 0;
+        grid-auto-rows: minmax(24rem, auto);
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    .editPizza {
+        width: 26rem;
+        height: 20rem;
+    }
+}

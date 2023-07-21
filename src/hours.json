@@ -1,0 +1,58 @@
+[
+	{
+		"hours_id" : 0,
+		"dayOfWeek" : "Sunday",
+		"openTime" : "11:00:00",
+		"closeTime" : "21:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	},
+	{
+		"hours_id" : 1,
+		"dayOfWeek" : "Monday",
+		"openTime" : "15:00:00",
+		"closeTime" : "21:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	},
+	{
+		"hours_id" : 2,
+		"dayOfWeek" : "Tuesday",
+		"openTime" : "15:00:00",
+		"closeTime" : "21:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	},
+	{
+		"hours_id" : 3,
+		"dayOfWeek" : "Wednesday",
+		"openTime" : "15:00:00",
+		"closeTime" : "21:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	},
+	{
+		"hours_id" : 4,
+		"dayOfWeek" : "Thursday",
+		"openTime" : "11:00:00",
+		"closeTime" : "21:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	},
+	{
+		"hours_id" : 5,
+		"dayOfWeek" : "Friday",
+		"openTime" : "11:00:00",
+		"closeTime" : "23:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	},
+	{
+		"hours_id" : 6,
+		"dayOfWeek" : "Saturday",
+		"openTime" : "11:00:00",
+		"closeTime" : "23:00:00",
+		"closed" : 0,
+		"closedNotice" : null
+	}
+]
