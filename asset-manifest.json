@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/wizard-pizza/static/css/main.3f24b0d0.css",
+    "main.js": "/wizard-pizza/static/js/main.1144a890.js",
+    "static/media/hamPineapple.webp": "/wizard-pizza/static/media/hamPineapple.96e1b112cca50e905e3a.webp",
+    "static/media/girlPizza.webp": "/wizard-pizza/static/media/girlPizza.8b23255c925c8ca640bc.webp",
+    "static/media/pizzaDining.webp": "/wizard-pizza/static/media/pizzaDining.2256c48dc0125c2e28da.webp",
+    "static/media/roma.webp": "/wizard-pizza/static/media/roma.fbc1d4d06f3946369b59.webp",
+    "static/media/neonPizza.webp": "/wizard-pizza/static/media/neonPizza.36204099ec67df1e3dcc.webp",
+    "static/media/starPricePink.png": "/wizard-pizza/static/media/starPricePink.88a9cd344ee571f7b4e2.png",
+    "static/media/starPrice.png": "/wizard-pizza/static/media/starPrice.6433c25a54475a78625c.png",
+    "index.html": "/wizard-pizza/index.html",
+    "main.3f24b0d0.css.map": "/wizard-pizza/static/css/main.3f24b0d0.css.map",
+    "main.1144a890.js.map": "/wizard-pizza/static/js/main.1144a890.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f24b0d0.css",
+    "static/js/main.1144a890.js"
+  ]
+}
